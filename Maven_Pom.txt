@@ -1,0 +1,24 @@
+What is maven Project:
+-Maven in a java project helps for projects build,dependencies and documentation
+-While executing any project, maven searches for pom.xml in the current directory and reads the configuration information 
+ and executs the project 
+-there were different project in a company and all we need to build together. Each of the project contains ant build files 
+and each projects ant file is different. We need some standard way to build all these projects and share jars across each project 
+hence maven came into existence.
+-Maven can be used to build and manage java based projects
+******************************************************************************
+What is POM XML:
+-Project Object Model 
+-It is a xml file, which contains information about project and configuration details used by maven to build the project 
+-It contains dependecies which you defined at the start.
+******************************************************************************
+
+Project directory Structure :
+build directory       : target 
+source directory      : src/main/java
+test source directory : src/test/java
+pom.xml               : contains information about the project 
+maven                 : contains all dependecy modules 
+
+******************************************************************************
+     

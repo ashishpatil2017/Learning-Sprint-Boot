@@ -1,0 +1,19 @@
+4 layers :
+1)presentation layer :
+-handles http request 
+-converts json request to java objects
+
+2)business layer
+-all the business logics will be handled here 
+-validation and all the business logic will be writen here 
+
+3)persistant layer :
+-it contains all the storage logic 
+-translates all the business logic to database rows 
+
+4)database layer :
+-this is the actual database
+-here create,delete, update operations are performed
+
+JPA : java persistant api is used to map java object to reletional database object and vice versa
+Persistant model(releted to reletional db) and Domain model(releted to java business logic object) 
