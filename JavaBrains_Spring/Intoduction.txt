@@ -1,0 +1,112 @@
+Introduction :
+-with spring boot we can create end to end application 
+-with spring boot we can create production level applications in the industry 
+
+**********************************************************************************
+This couse will teach below things :
+why we are using spring boot
+what is the use of spring boot 
+end to end api 
+some configuration 
+*********************************************************************************
+what is spring boot?
+-its a framwork which allows us to write java code 
+-boot means bootstrapping from scratch 
+-standalone production application which we can run 
+
+three keys for spring boot : 
+stand alone 
+production grade 
+just run 
+
+*********************************************************************************
+
+
+what is spring?
+-its a application framwork
+-infrastructure suppport like we can connect to different databases
+
+there where huge framwork in market which support spacific configuration . and now spring came 
+up with all the diffferent combination solution . If you want to build application with different combination of technology
+sprint provides servcie for it.
+
+different huge frameworks
+multiple setup steps 
+multiple configuration steps 
+multiple build and deploy steps 
+(because of these all problems spring is more flexible)
+
+best part of spring and sprint boot :
+-when you are writing spring application that means you are creating war/jar file 
+-at the end you will get a jar/war file which you just need to deploy in any server like tomcat and just run it 
+-you dont need to do any configuration in server once you get the final complete jar/war just deploy in server and run it
+
+********************************************************************************* 
+
+
+Maven Introduction :(Best explained maven)
+-Maven is a dependency management system 
+-whatever dependecies required for our app , that we need to mention in our pom.xml 
+ maven looks this pom.xml and comes to know what all dependecies required for this app and it just pulls 
+ all different dependecies from spring repo and puts in this application.
+-basically maven makes project simple by just adding dependecies as required.
+
+
+
+Creating Maven Project :
+create maven project and add below code in pom.xml to make the project as spring project 
+<parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>1.4.2.RELEASE</version>
+  </parent>
+  
+  
+-you can add web releted dependecies in pom.xml with below code 
+<dependencies>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  </dependencies>
+  
+-If you want to change to JRE version through maven, you can do that as well with below code 
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	
+*********************************************************************************
+	
+	
+	
+Whenever we start spring boot application , it actually starts below things :
+1)sets up default configurations 
+2)start spring application container that is application context 
+3)perform class path scan to know annotations in the class and understand which is controller and which is service class 
+  and it will treat them like that only.
+4)starts tomcat server 
+(Note : Here we havent installed tomcat server, tomcat server is in build in this spring boot)
+(For the normal maven project without sprint boot , we need to install tomcat seperately)
+
+*********************************************************************************
+
+Adding Controller to the Spring Application :
+-these are also java classes 
+-based on annotations present in these classes , spring understands this as a controller class
+-this contains the information about uri which will request for api 
+Rules for controller classes :
+-create simple java class 
+-add @RestController annotation to it(at class level)
+-add @RequestMapping annotation to it(what you want to return before that add this annotation)
+
+*********************************************************************************
+Spring MVC : 
+-It is the child project of spring framwork 
+-MVC means model view controller 
+
+*********************************************************************************
+	
+
+  
+
+
