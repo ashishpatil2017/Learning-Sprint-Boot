@@ -1,0 +1,9 @@
+JPA : the data tier (java persistant API)
+-For object reletion mapping we use java persistant api 
+-we need to use some jdbc to connct java to databases and to run queries 
+-jpa is a api which let do object reletion mapping 
+
+spring data jpa :
+-its a again a seperate subproject of spring framework 
+-It makes these orm tasks very easy
+ 

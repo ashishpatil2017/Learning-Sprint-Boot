@@ -1,0 +1,13 @@
+How to run Sprint boot application on command promt
+reference : https://mkyong.com/maven/how-to-install-maven-in-windows/
+
+steps :
+1)go to the project file in file explorer
+2)open command promot there 
+3)make sure apache maven is installed and its path are set in system varible as per the link above 
+4)check mvn -version to check apache maven has installed correctly or not 
+5)after that run following command to generate jar file 
+	mvn clean install 
+6)run the executable jar 
+	 java -jar jar_file_name.jar
+-----your-project-is-running-------------------------

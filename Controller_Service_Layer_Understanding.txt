@@ -1,0 +1,37 @@
+Spring MVC Controller :
+-Its another proojector in spring framework 
+-Spring mvc checks the incoming request from user and  checks if its get,put,post 
+-if there is request matching in controller then it maps tht reuqest with java functionality 
+-and later it maps with proper response 
+-spring mvc automatically did the java to json conversion (it has inbuild functionality)
+
+
+
+RestAPI that we are building here :
+-It has three resource Topic , Courses and Lessons 
+-Each topic can have multiple course and each course have multiple lessons 
+-Lets consider the example of topcis and start
+
+For Topic we can have following services :
+get     /topics      gets all topics
+get     /topics/id   gets one topic 
+post    /topics      create new topic
+put     /topicd/id   updates the topic 
+delete  /topics/id   deletes the topic
+
+
+creating business services:
+refer code base 
+
+different annotations with there use :
+@Service : this is a class level annotation, this is used when we want to make any class as service class 
+@RestController : This is a class level annotation, this is used when we want to make any class as controller 
+@Autowired : It injects the dependecies being used .
+@RequestMapping : to route perticular request to this followng code (value and method)
+@PathVariable : used to make request url varibale as java variable 
+@RequestBody : used to make request body into java object 
+
+
+
+
+
